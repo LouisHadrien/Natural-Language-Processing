@@ -9,6 +9,7 @@ randomly paired and asked to act the part of a given provided persona.
 For each utterance, there are  N+1 possible answers of which we have to pick out the correct one.
 The format of the training is: utterance TAB correctAnswer TAB distractor1 | distractor2 | ... | distractorN-
 For testing: utterance TAB possibleAnswer1 | ... | possibleAnswerN+1.
+An example of the results is shown on the image bot.JPG, the model precision is 43%
 
 # Skip Gram with negative resempling
 
