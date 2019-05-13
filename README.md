@@ -1,6 +1,8 @@
 # Natural-Language-Processing
 
-# NLP3.py
+# Retrieval chatbot
+
+file (nlp3.py)
 
 Building a retriaval chatbot (convAI challenge).Persona-Chat training set consists of conversations between crowdworkers who were 
 randomly paired and asked to act the part of a given provided persona.
