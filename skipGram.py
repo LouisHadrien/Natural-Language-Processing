@@ -2,7 +2,6 @@ from __future__ import division
 import argparse
 import pandas as pd
 
-# useful stuff
 import numpy as np
 from numpy import random
 from scipy.special import expit
@@ -11,12 +10,7 @@ import string
 from six import iteritems
 import pickle
 
-__authors__ = ['Tandez Sarkaria','Carlo Dalla Quercia','Louis-Hadrien Pion', 'Julien Crabié']
-__emails__  = ['b00747092@essec.edu','b00747370@essec.edu','b00748132@essec.edu','julien.crabie@essec.edu']
 
-#path = "/Users/tandezsarkaria/Desktop/CurrentClasses/NLP/1-billion-word-language-modeling-benchmark-r13output/training-monolingual.tokenized.shuffled/news.en-00001-of-00100"     
-#path2 = "/Users/tandezsarkaria/Desktop/CurrentClasses/NLP/EN-SIMLEX-999.txt"
-#path3 = "/Users/tandezsarkaria/Desktop/CurrentClasses/NLP/Embeddings"
 
 
 ###### tokenization###########################
@@ -242,12 +236,7 @@ class SkipGram:
 
 
     def similarity(self,word1,word2):
-        """
-            computes similiarity between the two words. unknown words are mapped to one common vector
-        :param word1:
-        :param word2:
-        :return: a float \in [0,1] indicating the similarity (the higher the more similar)
-        """
+
         
         if(word1 in self.dictionary_new) and (word2 in self.dictionary_new):
             index1 = self.dictionary_new.index(word1)
